@@ -1,4 +1,4 @@
-console.log("Hey this is the js file");
+// console.log("Hey this is the js file");
 
 const form = document.querySelector("form");
 const input = document.querySelector("input");
