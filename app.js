@@ -5,6 +5,7 @@ const hbs = require("hbs");
 const geolocation = require("./geolocation");
 const publicpathdir = path.join(__dirname, "../web-servers/public");
 const template = path.join(__dirname, "../web-servers/public/template/views");
+const port = process.env.PORT || 3000;
 const partials = path.join(
   __dirname,
   "../web-servers/public/template/partials"
@@ -55,6 +56,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Running port 3000");
 });
